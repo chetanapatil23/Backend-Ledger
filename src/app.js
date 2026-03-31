@@ -12,6 +12,10 @@ const authRouter = require("./routes/auth.routes")
 const accountRouter = require("./routes/account.routes")
 const transactionRouter = require("./routes/transaction.routes")
 
+app.get("/", (req, res) => {
+    res.send("Ledger Service is up and running")
+})
+
 //used routes
 app.use("/api/auth",authRouter)
 app.use("/api/account", accountRouter)
