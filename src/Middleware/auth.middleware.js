@@ -15,7 +15,7 @@ async function authMiddleware(req, res, next) {
 
     if (blacklistedToken) {
         return res.status(401).json({
-            message: "Unathorized access, token is blacklisted"
+            message: "Unathorized access, token is blacklisted hello"
         })
     }
 
